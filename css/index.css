@@ -1,15 +1,18 @@
 .logo {
     padding: 0;
-    margin: 0.75rem 100rem 0.75rem 0;
+    margin: 0 3rem;
     height: 1.5rem;
     display: inline-block;
 }
 
 .iconBar {
     padding: 0;
-    height: 3rem;}
+    height: 3rem;
+    display: flex;
+    align-items: center}
 
 .iconBar#topBar {
+    justify-content: space-between;
 }
 
 .iconBar#bottomBar {
@@ -17,11 +20,18 @@
     bottom: 0;
     left: 0;
     width: 100%;
+    justify-content: space-around;
+}
+
+
+.iconHolder {
+/*    display: grid;
+    justify-items: center;
+    align-items: center;
+    overflow: hidden;*/
 }
 
 .icon {
-    margin-top: 0.5rem;
-    margin-bottom: 0.5rem;
     width: 2rem;
     height: 2rem;
     background-size: 2rem 2rem;
