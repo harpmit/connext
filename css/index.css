@@ -1,0 +1,69 @@
+.logo {
+    padding: 0;
+    margin: 0.75rem 100rem 0.75rem 0;
+    height: 1.5rem;
+    display: inline-block;
+}
+
+.iconBar {
+    padding: 0;
+    height: 3rem;}
+
+.iconBar#topBar {
+}
+
+.iconBar#bottomBar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+.icon {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    width: 2rem;
+    height: 2rem;
+    background-size: 2rem 2rem;
+    display: inline-block;
+    background-repeat: no-repeat;
+}
+
+
+/*CSS for the connection tiles*/
+.ConnectionTile {
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+    padding: 0.3rem;
+    background-color: white;
+    display: flex;
+    align-items: center;
+}
+
+.profilePicture {
+    height: 4rem;
+    width: 4rem;
+    border-radius: 2rem;
+    display: inline;
+    margin-right: 2rem;
+    border: thin black solid
+}
+
+.profileDescription {
+    display: inline-block;
+    min-width: 1rem;
+    min-height: 1rem;
+}
+
+.tightContent {
+    margin: 0;
+    padding: 0;
+}
+
+.connectionName {
+    font-weight: bold;
+}
+
+.jobTitle {
+    font-style: italic;
+}

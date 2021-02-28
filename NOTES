@@ -1,0 +1,1 @@
+1. In order for the JSX compiler to work, this index.html file needs to be hosted instead of just opening it with a browser. To do this, first "cd" into the directory with index.html. Then run "php -S localhost:8000"
