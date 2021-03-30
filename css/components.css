@@ -1,0 +1,55 @@
+.connectionTile {
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+    padding: 0.3rem;
+    background-color: white;
+}
+
+.verticalFlexBox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.horizontalFlexBox {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.smallImage {
+    height: 4rem;
+    width: 4rem;
+    border-radius: 2rem;
+    border: thin black solid
+}
+
+.largeImage {
+    height: 6rem;
+    width: 6rem;
+    border-radius: 2rem;
+    border: thin black solid
+}
+
+.profileDescription {
+    min-width: 1rem;
+    min-height: 1rem;
+}
+
+#name {
+    font-weight: bold;
+}
+
+.tightContent {
+    margin: 0;
+    padding: 0;
+}
+
+.connectionName {
+    font-weight: bold;
+}
+
+.jobTitle {
+    font-style: italic;
+}

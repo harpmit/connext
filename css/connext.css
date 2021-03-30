@@ -1,0 +1,72 @@
+:root {
+  --blue: rgba(86,209,234,255);
+}
+
+.blueBackground {
+    background-color: var(--blue)
+}
+
+.grayBackground {
+    background-color: rgba(240,242,245,255)
+}
+
+.iconBar {
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 4.5rem;
+    padding: 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0}
+
+
+.innerIcon {
+    width: 2rem;
+    height: 2rem;
+    background-size: 2rem 2rem;
+    display: inline-block;
+    background-repeat: no-repeat;
+}
+
+.outerIcon {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+    height: 4.5rem;
+    margin: 0;
+    color: var(--blue); /*for the font*/
+    border-top: thin solid var(--blue);
+    border-right: thin solid var(--blue);
+}
+
+.outerIcon p {
+    font-weight: bold;
+    margin: 0;
+    padding: 0
+}
+
+.outerIcon:Hover {
+    color:white;
+    background-color: var(--blue);
+    cursor: pointer;
+}
+
+.header {
+    text-align: center; 
+    margin: .5rem 0; 
+    font-weight: bold;
+}
+
+.dropdown {
+    border-radius: 0.25rem;
+    background-color: white;
+    min-height: 1.75rem;
+    min-width: 15rem;
+}
+
+a:Hover {
+    text-decoration: none;
+}

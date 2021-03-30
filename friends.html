@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Connext is a platform to facilitate connections within your social network">
+    <title>Connext</title>
+    <link rel="icon" href="">
+
+    <!-- CSS -->
+    <link href="libraries/bootstrap/bootstrap.css" rel="stylesheet">
+    <link href="css/connext.css" rel="stylesheet">
+    <link href="css/components.css" rel="stylesheet">
+  </head>
+
+<body class="grayBackground">
+
+<main class="container" id='mainBody' style="margin-bottom: 5rem;">
+</main>
+
+<div id="bottomBar" class="iconBar grayBackground">
+  <a class="outerIcon" href="./index.html">
+    <p>Home</p>
+    <div class="innerIcon" style="background-image: url(assets/bootstrapIcons/house.svg)"></div>
+  </a>
+  <a class="outerIcon" href="./friends.html">
+    <p>Friends</p>
+    <div class="innerIcon" style="background-image: url(assets/bootstrapIcons/people-fill.svg)"></div>
+  </a>
+  <a class="outerIcon" href="./explore.html">
+    <p>Explore</p>
+    <div class="innerIcon" style="background-image: url(assets/bootstrapIcons/map.svg)"></div>
+  </a>
+  <a class="outerIcon" style="border-right: none" href="./search.html">
+    <p>Search</p>
+    <div class="innerIcon" style="background-image: url(assets/bootstrapIcons/search.svg)"></div>
+  </a>
+</div>
+
+</body>
+
+<script src="libraries/userID.js"></script>
+
+<!-- Import boostrap javascript -->
+<script src="libraries/bootstrap/jquery-3.5.1.slim.min.js"></script>
+<script src="libraries/bootstrap/bootstrap.js"></script>
+
+<!-- Load React. -->
+<script src="libraries/react/react.production.min.js"></script>
+<script src="libraries/react/react-dom.production.min.js"></script>
+
+<!-- load jsx compiler -->
+<!-- include type="text/babel" to compile jsx code -->
+<script src="libraries/react/babel.min.js"></script>
+
+<!-- Load our React components -->
+<script type="text/babel" src="libraries/components.jsx"></script>
+
+<!-- Code for interacting with the database -->
+<script type="text/javascript" src="libraries/data/d3.v6.min.js"></script>
+<script type="text/javascript" src="libraries/dataFunctions.js"></script>
+
+<!-- Load this page -->
+<script type="text/babel" src="friends.jsx"></script>
+
+</html>
+
+
+
+
