@@ -172,3 +172,12 @@ results = pd.DataFrame(results,
                                   'farFriends',
                                   'closenessScores'])
 results.to_csv('profiles.csv',index=False)
+
+results.set_index('userID')
+results = results.T
+JSON = results.to_json()
+if os.path.exists('profiles.json'):
+    os.remove('profiles.json')
+fil = open('profiles.json','w')
+fil.write(JSON)
+fil.close()

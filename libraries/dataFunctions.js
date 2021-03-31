@@ -7,26 +7,33 @@
 //     let userDatabase = await loadProfiles();
 //     //specific functionality for this fucntion
 // }
+// async function loadProfiles() {
+//     let promise = d3.csv('/database/profiles.csv')
+//     let frame = await promise
+
+//     processedFrame = {}
+//     let i=0;
+//     for (i;i<frame.length;i+=1) {
+//         let row = frame[i];
+//         processedFrame[row['userID']] = {}
+//         processedFrame[row['userID']]['firstName'] = row['firstName']
+//         processedFrame[row['userID']]['lastName'] = row['lastName']
+//         processedFrame[row['userID']]['industry'] = row['industry']
+//         processedFrame[row['userID']]['school'] = row['school']
+//         processedFrame[row['userID']]['profileImageScr'] = '/database/'+row['profileImageScr']
+
+//         processedFrame[row['userID']]['closeFriends'] = JSON.parse(row['closeFriends'])
+//         processedFrame[row['userID']]['farFriends'] = JSON.parse(row['farFriends'])
+//         processedFrame[row['userID']]['closenessScores'] = JSON.parse(row['closenessScores'].replace(/'/g,"\""))
+//     }
+//     userDatabase = processedFrame;
+//     return userDatabase
+// }
 async function loadProfiles() {
-    let promise = d3.csv('/database/profiles.csv')
-    let frame = await promise
-
-    processedFrame = {}
-    let i=0;
-    for (i;i<frame.length;i+=1) {
-        let row = frame[i];
-        processedFrame[row['userID']] = {}
-        processedFrame[row['userID']]['firstName'] = row['firstName']
-        processedFrame[row['userID']]['lastName'] = row['lastName']
-        processedFrame[row['userID']]['industry'] = row['industry']
-        processedFrame[row['userID']]['school'] = row['school']
-        processedFrame[row['userID']]['profileImageScr'] = '/database/'+row['profileImageScr']
-
-        processedFrame[row['userID']]['closeFriends'] = JSON.parse(row['closeFriends'])
-        processedFrame[row['userID']]['farFriends'] = JSON.parse(row['farFriends'])
-        processedFrame[row['userID']]['closenessScores'] = JSON.parse(row['closenessScores'].replace(/'/g,"\""))
+    let userDatabase = await fetch('/database/profiles.json').then(response => response.json());
+    for (var i in userDatabase) {
+        userDatabase[i]['profileImageScr'] = '/database/'+userDatabase[i]['profileImageScr']
     }
-    userDatabase = processedFrame;
     return userDatabase
 }
 
