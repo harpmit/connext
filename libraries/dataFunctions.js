@@ -30,8 +30,7 @@
 //     return userDatabase
 // }
 async function loadProfiles() {
-    console.log('no root symbol')
-    let userDatabase = await fetch('database/profiles.json').then(response => response.json());
+    let userDatabase = await fetch('/database/profiles.json').then(response => response.json());
     for (var i in userDatabase) {
         userDatabase[i]['profileImageScr'] = '/database/'+userDatabase[i]['profileImageScr']
     }
