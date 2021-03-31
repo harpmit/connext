@@ -30,9 +30,9 @@
 //     return userDatabase
 // }
 async function loadProfiles() {
-    let userDatabase = await fetch('/database/profiles.json').then(response => response.json());
+    let userDatabase = await fetch('database/profiles.json').then(response => response.json());
     for (var i in userDatabase) {
-        userDatabase[i]['profileImageScr'] = '/database/'+userDatabase[i]['profileImageScr']
+        userDatabase[i]['profileImageScr'] = 'database/'+userDatabase[i]['profileImageScr']
     }
     return userDatabase
 }
